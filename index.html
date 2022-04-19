@@ -399,7 +399,7 @@
         <!-- footer -->
         <footer class="footer">
             <div class="container footer-container">
-                <address>
+                <address class="footer-addres">
                     <ul class="footer-list">
                         <li class="footer-logo">
                             <a class="link logo-footer" href="./index.html" lang="en">
@@ -464,6 +464,16 @@
                         </li>
                     </ul>
                 </div>
+                <div class="subscription-newsletter">
+                    <h2 class="footer-social-title">Подпишитесь на рассылку</h2>
+                    <form class="subscription-form">
+                        <input class="subscription-input" type="email" name="subscription-newsletter" placeholder="E-mail">
+                        <button class="subscription-button" type="submit">Подписаться<svg width="24" height="24"
+                                class="subscription-svg">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg></button>
+                       </form>
+                </div>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -472,9 +482,51 @@
                     <svg class="modal-icon-close" width="11" height="11">
                         <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
-
-
                 </button>
+                <form class="modal-form">
+                    <p class="agreement-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <ul class="agreement-client-contact">
+                            <li class="agreement-client-contact-list">
+                                <label class="modal-form-label"><span class="label-title">Имя</span>
+                                    <input class="agreement-client-contact-input" type="text" name="name" autocomplete="off">
+                                        <svg class="agreement-client-contact-svg" width="18" height="18">
+                                            <use href="./images/sprite.svg#person-black"></use>
+                                        </svg>
+                                </label>
+                            </li>
+                            <li class="agreement-client-contact-list">
+                                <label class="modal-form-label"><span class="label-title">Телефон</span>
+                                    <input class="agreement-client-contact-input" type="tel" name="phone-number" placeholder=" ">
+                                        <svg class="agreement-client-contact-svg" width="18" height="18">
+                                            <use href="./images/sprite.svg#phone-black"></use>
+                                        </svg>
+                                </label>
+                            </li>
+                             <li class="agreement-client-contact-list">
+                                <label class="modal-form-label"><span class="label-title">Почта</span>
+                                    <input class="agreement-client-contact-input" type="email" name="email" placeholder=" ">
+                                        <svg class="agreement-client-contact-svg" width="18" height="18">
+                                            <use href="./images/sprite.svg#email-black"></use>
+                                        </svg>
+                                </label>
+                            </li>
+                    </ul>
+                        <label class="comment"><span class="label-title">Комментарий</span>
+                            <textarea class="comment-textarea" name="comment" rows="5" placeholder="Введите текст"></textarea>
+                        </label>
+                    <div class="follow-section">
+                            <label class="follow-checkbox">
+                                <input class="checkbox" type="checkbox" name="subscription" required>
+                                    <span class="follow-svg">
+                                        <svg width="16" height="15">
+                                            <use href="./images/sprite.svg#icon-check"></use>
+                                        </svg>
+                                    </span>
+                                    Соглашаюсь с рассылкой и принимаю <a class="agreement-condition" href="#">Условия договора</a>
+                            </label>
+                    </div>
+                        <button class="agreement-button" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
